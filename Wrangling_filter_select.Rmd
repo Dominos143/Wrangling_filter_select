@@ -206,6 +206,8 @@ movies_1995 <- movies %>%
   filter(year== 1995)
 movies_1995
 ```
+According to the data, 1,248 movies were released in 1995.
+
 
 2. Which Comedies with an MPAA rating, over 120 minutes have a rating above 8?
 
