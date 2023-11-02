@@ -254,8 +254,16 @@ The movie that had the highest votes per imdb.com is Harry Potter and the Sorcer
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
 ```{r}
-
+movies %>%
+  filter(votes >= 100 & Comedy==1 |Animation == 1) %>%
+  select(title, rating, budget, votes) %>%
+  arrange(desc(budget))
 ```
+
+The highest budget for a comedy or animation with at least 100 votes is 170000000. The movie is Wild Wild West. Wild Wild West is a comedy.
+
+
+
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
